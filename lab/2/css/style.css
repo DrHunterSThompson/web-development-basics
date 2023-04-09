@@ -1,19 +1,26 @@
-@font-face {
+/* @font-face {
 	font-family: Floydian;
 	src: url('../fonts/floyd.TTF');
+} */
+@font-face {
+	font-family: Oswald;
+	src: url('../fonts/Oswald/Oswald-Regular.ttf');
+}
+@font-face {
+	font-family: Playfair Display;
+	src: url('../fonts/Playfair Display/PlayfairDisplay-Regular.ttf');
 }
 
 
 body {
 	margin: 0;
-	margin-top: 60px;
 
 	background: url('https://thewallcomplete.com/wp-content/uploads/2017/02/original-harvest-cover-OG_1200x630.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 
-	font-family: 'Oswald', sans-serif;
+	font-family: Oswald, sans-serif;
 }
 
 
@@ -36,37 +43,179 @@ header section a div {
 	font-size: 2em;
 	color: #fff;
 }
+header section a div.menu-active {
+	background: linear-gradient(#111, #333);
+}
 header section a div:hover {
-	background: linear-gradient(#111111, #333333);
+	background: linear-gradient(#222, #444);
 	text-shadow: 1px 1px 10px #f00;
+}
+
+
+
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: Playfair Display;
+	font-weight: 500;
+	text-align: center;
+	color: #ED2025;
+	text-shadow: 2px 2px 5px #666;
+	font-size: 5em;
+	margin-block-start: 0;
+	margin-bottom: 1em;
+	padding-top: 200px;
+}
+
+h1 hr {
+	width: 50%;
+	color: #ED2025;
+	border: 2px solid #ed2025;
+	margin-top: .1em;
+	box-shadow: 2px 2px 5px #666;
+}
+
+#home-page-img {
+	box-shadow: 1px 5px 10px #000;
+	width: 80%;
+	margin: 5% 10%;
+}
+
+#home-page-container p {
+	width: 80%;
+	padding: 0 10%;
+}
+
+p.article {
+	padding: 15px;
+	font-size: 1.7em;
+	text-align: justify;
+	text-shadow: 1px 1px 10px #fff;
+}
+
+
+section.row {
+	margin-top: 50px;
+}
+section.row div {
+	width: 20%;
+	float: left;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-bottom: 50px;
+}
+section.row div img {
+	width: 100%;
+	box-shadow: 1px 1px 3px #666;
+}
+section.row div:hover img {
+	box-shadow: 1px 1px 15px #666;
+}
+section.row a {
+	text-decoration: none;
+}
+section.row div p {
+	margin: 0;
+	text-align: center;
+	font-size: 2rem;
+	color: #222;
+	text-shadow: 1px 1px 3px #666;
+	height: 3em;
+}
+section.row div:hover p {
+	font-weight: bold;
+	text-shadow: 1px 1px 15px #666;
+}
+
+
+/* .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+	min-height: 1px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+.col-xl-12, .col-lg-12, .col-md-12 {
+	float: left;
+	width: 100%;	
+}
+.col-xl-11, .col-lg-11, .col-md-11 {
+	float: left;
+	width: 91.66%;	
+}
+.col-xl-10, .col-lg-10, .col-md-10 {
+	float: left;
+	width: 83.33%;	
+}
+.col-xl-9, .col-lg-9, .col-md-9 {
+	float: left;
+	width: 75%;	
+}
+.col-xl-8, .col-lg-8, .col-md-8 {
+	float: left;
+	width: 66.66%;	
+}
+.col-xl-7, .col-lg-7, .col-md-7 {
+	float: left;
+	width: 58.33%;	
+}
+.col-xl-6, .col-lg-6, .col-md-6 {
+	float: left;
+	width: 50%;	
+}
+.col-xl-5, .col-lg-5, .col-md-5 {
+	float: left;
+	width: 41.66%;	
+}
+.col-xl-4, .col-lg-4, .col-md-4 {
+	float: left;
+	width: 33.33%;	
+}
+.col-xl-3, .col-lg-3, .col-md-3 {
+	float: left;
+	width: 25%;	
+}
+.col-xl-2, .col-lg-2, .col-md-2 {
+	float: left;
+	width: 16.66%;	
+}
+.col-xl-1, .col-lg-1, .col-md-1 {
+	float: left;
+	width: 8.33%;	
 }
 
 
 @media (min-width: 1200px) {
 	.container {
-		width: 1170px;
-		margin: 0 auto;
+		width: 1140px;
+	}
+	.container>section.row>div img {
+		width: 100%;
+		height: 100%;
 	}
 }
-
-
-#home-page-h1 {
-	font-family: Floydian;
-	color: #ED2025;
-	text-align: center;
-	font-size: 5em;
-	text-shadow: 1px 1px 5px #000;
-	margin: 1.5em 0 .5em;
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container {
+		width: 960px;
+	}
 }
-#home-page-img {
-	box-shadow: 1px 5px 20px #000;
-	width: 70%;
-	margin: 0 15%;
+@media (min-width: 768px) and (max-width: 991px) {
+	.container {
+		width: 720px;
+	}
 }
+@media (max-width: 767px) {
+	.container {
+		width: 90%;
+	}
 
-p.article {
-	padding: 15px;
-	font-size: 1.6em;
-	text-align: justify;
-	text-shadow: 1px 1px 10px #fff;
-}
+	header {
+		font-size: 2.5vw;
+	}
+	h1 {
+		font-size: 10vw;
+	}
+} */
