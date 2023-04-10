@@ -148,12 +148,15 @@ section.row div:hover p {
 
 
 
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
 	section.row div {
 		width: 33.33%;
 	}
 	section.row div p {
 		font-size: 3vw;
+	}
+	p.article {
+		font-size: 2.5em;
 	}
 }
 
