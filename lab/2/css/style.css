@@ -148,7 +148,7 @@ section.row div:hover p {
 
 
 
-@media (max-width: 479px) {
+@media (max-width: 359px) {
 	section.row div {
 		width: 33.33%;
 	}
