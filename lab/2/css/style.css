@@ -97,9 +97,23 @@ p.article {
 	text-shadow: 1px 1px 10px #fff;
 }
 
+h2 {
+	padding: 15px;
+	padding-top: 100px;
+	font-family: Playfair Display;
+	font-size: 3em;
+	text-shadow: 2px 2px 5px #666;
+}
+h2 hr {
+	border: 1px solid black;
+	box-shadow: 2px 2px 5px #666;
+	margin: 0;
+}
 
 section.row {
-	margin-top: 50px;
+	box-sizing: border-box;
+	display: block;
+	clear: both;
 }
 section.row div {
 	width: 20%;
@@ -121,14 +135,26 @@ section.row a {
 section.row div p {
 	margin: 0;
 	text-align: center;
-	font-size: 2rem;
+	font-size: 2vw;
 	color: #222;
 	text-shadow: 1px 1px 3px #666;
-	height: 3em;
+	height: 6vw;
 }
 section.row div:hover p {
 	font-weight: bold;
 	text-shadow: 1px 1px 15px #666;
+}
+
+
+
+
+@media (max-width: 767px) {
+	section.row div {
+		width: 33.33%;
+	}
+	section.row div p {
+		font-size: 3vw;
+	}
 }
 
 
