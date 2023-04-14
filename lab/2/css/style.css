@@ -11,7 +11,7 @@
 body {
 	margin: 0;
 
-	background: url('https://thewallcomplete.com/wp-content/uploads/2017/02/original-harvest-cover-OG_1200x630.jpg');
+	background: url("../images/bg.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
