@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>ЛР№3 Трегуб Олег гр.КН-221г "Основи веб-розробки"</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="container">
+            <form id="registration">
+                <fieldset>
+                    <legend>Форма реєстрації</legend>
+                    
+                    <table class="alignment">
+                        <tr>
+                            <td width="220"> <label for="fio">ПІБ</label> </td>
+                            <td> <input id="fio" name="fio" type="text" required autofocus></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td> <input id="email" name="email" type="email" required> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="phone">Номер телефону</label> </td>
+                            <td> <input id="phone" name="phone" type="tel" placeholder="(0XX) XXX-XX-XX" required pattern="[(]\d{3,4}[)]\s\d{2,3}[-]\d{2}[-]\d{2}"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dateofbirth">Дата народження</label></td>
+                            <td><input id="dateofbirth" name="dateofbirth" type="date"></td>
+                        </tr>
+                    </table>   
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Параметри доставки</legend>
+                    
+                    <table>
+                        <tr>
+                            <td width="220"><label for="address">Адреса</label></td>
+                            <td><textarea id="address" name="address" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="postcode">Поштовий індекс</label></td>
+                            <td><input id="postcode" name="postcode" type="number" min="01000" max="99999"></td>  <!-- Значення поштового індексу в Україні знаходяться в межах від 01000 до 99999 -->
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Уподобаний спосіб отримання повідомлень</legend>
+                    
+                    <table>
+                        <tr>
+                            <td><input id="emailmessage" name="message" type="radio" checked></td>
+                            <td><label for="emailmessage">По Email</label></td>
+                        </tr>
+                        <tr>
+                            <td><input id="phonemessage" name="message" type="radio"></td>
+                            <td><label for="phonemessage">По телефону</label></td>
+                        </tr>
+                        <tr>
+                            <td><input id="nomessage" name="message" type="radio"></td>
+                            <td><label for="nomessage">Не повідомляти мене</label></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset id="button-submit">
+                    <button type="submit">Надіслати дані</button>
+                </fieldset>                    
+            </form>
+        </div>
+    </body>
+</html>
