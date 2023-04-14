@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ЛР №4 Трегуб Олег гр. КН-221г "Основи веб-розробки"</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            function getAData() {
+                var a_data = new Date();
+                console.log(a_data);
+                document.querySelector("input#a-data").textContent = a_data;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <form id="a">
+                <label for="a-data">К-сть годин і хвилин, що пройшли з початку поточного місяця:</label>
+                <input type="text" name="a-data" id="a-data">
+                <button id="cancel">Скасувати</button>
+                <button id="ok" onclick="getAData();">ОК</button>
+            </form>
+        </div>
+    </body>
+</html>

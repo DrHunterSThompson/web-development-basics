@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(90deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    width: 700px;
+    height: 210px;
+    margin: 50px auto;
+    background: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-color: #0093E9;
+    box-sizing: border-box;
+    border: 5px solid #55afec;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+
+form label {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+form input {
+    display: block;
+    text-align: center;
+    background: #e9f5fe;
+    font-weight: 300;
+    font-size: 2em;
+    width: 300px;
+    margin: 15px auto;
+    box-sizing: border-box;
+    border: 2px solid #093381;
+    border-radius: 5px;
+}
+form button {
+    border: 3px solid #093381;
+    border-radius: 15px;
+    display: block;
+    font-size: 1.35em;
+    margin: 15px 5%;
+    width: 40%;
+    float: left;
+    height: 60px;
+    color: #042664;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+form button#cancel {
+    background: linear-gradient(147deg, #d3b80b 0%, #FF2525 74%);
+}
+form button#ok {
+    background: linear-gradient(147deg, #02b053 0%, #00cd30 74%);
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #333;
+}
