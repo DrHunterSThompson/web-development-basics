@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(90deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-color: #0093E9;
+    box-sizing: border-box;
+    border: 5px solid #55afec;
+    border-radius: 15px;
+}
+
+form fieldset {
+    margin: 15px;
+    border: 3px solid #4158D0;
+    border-radius: 10px;
+}
+form legend {
+    color: #354ec9;
+    font-weight: 500;
+    font-size: 1.38em;
+    text-align: center;
+    padding-inline-start: 5px;
+    padding-inline-end: 5px;
+}
+form label {
+    font-weight: 300;
+    font-size: 1.2em;
+    /* padding-right: 30px; */
+}
+form input {
+    background: #e9f5fe;
+    font-weight: 300;
+    font-size: 1.2em;
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #093381;
+    border-radius: 5px;
+}
+form textarea {
+    background: #e9f5fe;
+    font-weight: 300;
+    font-size: 1.2em;
+    border: 2px solid #093381;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+form input[type="radio"] {
+    width: auto;
+}
+form fieldset#button-submit {
+    border: 0;
+}
+form button {
+    background: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    border: 3px solid #093381;
+    border-radius: 15px;
+    display: block;
+    font-size: 1.35em;
+    margin: 15px auto;
+    width: 400px;
+    height: 80px;
+    color: #042664;
+    font-weight: 600;
+    text-transform: uppercase;
+}
