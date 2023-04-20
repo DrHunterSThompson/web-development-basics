@@ -3,7 +3,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#container {
+.container {
+    box-sizing: border-box;
     width: 700px;
     height: 210px;
     margin: 50px auto;
@@ -54,4 +55,34 @@ form button#ok {
 button:hover {
     cursor: pointer;
     box-shadow: 1px 1px 5px #333;
+}
+
+div#link {
+    width: 40%;
+    text-align: center;
+    height: 100px;
+}
+div#link a {
+    color: #042664;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+div#link a:hover {
+    text-shadow: 0px 0px 3px #333;
+}
+
+h2 {
+    margin: 15px;
+    text-align: center;
+    font-size: 2em;
+}
+div#coords {
+    width: 50%;
+    margin: auto;
+    font-size: 2em;
+    text-align: center;
 }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html onmousemove="showCoords(event)">
+    <head>
+        <meta charset="utf-8">
+        <title>ЛР №4 Трегуб Олег гр. КН-221г "Основи веб-розробки"</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            function showCoords(event) {
+                var x = event.clientX;  // Horizontal
+                var y = event.clientY;  // Vertical
+                document.getElementById("coords").innerHTML = "x: " + x + "<br>y: " + y;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>Поточні координати курсора:</h2>
+            <div id="coords"></div>
+        </div>
+    </body>
+</html>
