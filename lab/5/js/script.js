@@ -6,6 +6,7 @@ window.onload = function () {
 
 document.querySelector("div#datetime").onmouseover = function () {
     intervalID = setInterval(showTime, 1000);
+    document.querySelector("div#datetime").style = "cursor: pointer;"
 };
 document.querySelector("div#datetime").onmouseout = function () {
     clearInterval(intervalID);
