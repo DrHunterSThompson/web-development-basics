@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient(90deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 700px;
+    margin: 50px auto;
+    background: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    background-color: #0093E9;
+    box-sizing: border-box;
+    border: 5px solid #55afec;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.container#images img {
+    margin: 15px auto;
+}
+
+img:hover {
+    cursor: pointer;
+}
